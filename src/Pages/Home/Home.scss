@@ -1,0 +1,441 @@
+.main_home {
+  padding-bottom: 40px;
+  margin: 40px;
+
+  .top_home {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left_card {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1300px) {
+        width: 100%;
+      }
+
+      .card_title {
+        font-family: "EB Garamond", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        padding: 45px 0px;
+      }
+
+      .card_content {
+        width: 100%;
+        height: 792px;
+        background: #ffffff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+
+        @media (max-width: 1640px) {
+          height: 692px;
+        }
+
+        .card_top {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding-top: 30px;
+
+          .card_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .subTitle {
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              color: #000000;
+            }
+
+            .cardTitle {
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 30px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              color: #012939;
+              padding-bottom: 24px;
+              padding-top: 3px;
+            }
+
+            .select__control {
+              height: 55px;
+              border: unset !important;
+              box-shadow: unset !important;
+              cursor: pointer;
+              width: 120px;
+            }
+
+            .select__menu {
+              width: 99px;
+            }
+
+            .select__indicator {
+              color: #8b8b8b;
+              font-size: 20px;
+            }
+
+            .select__menu-list {
+              padding-top: unset !important;
+            }
+
+            .select__option {
+              border-top: 1px solid #d5d9e0 !important;
+              display: flex;
+              align-items: center;
+              padding-left: 15px;
+              width: 100% !important;
+              background-color: unset !important;
+              cursor: pointer;
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 15px;
+              color: #8b8b8b;
+
+              &:hover {
+                background-color: #e2e8f0 !important;
+              }
+            }
+
+            .select__indicator-separator {
+              background-color: unset !important;
+            }
+
+            .select__single-value {
+              padding-left: 5px;
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 15px;
+              color: #8b8b8b;
+            }
+          }
+        }
+
+        .echarts-for-react {
+          width: 100%;
+          height: 400px !important;
+
+          @media (max-width: 1640px) {
+            height: 300px !important;
+          }
+        }
+
+        .test_sec {
+          position: absolute;
+          bottom: 25px;
+          left: 50px;
+          color: #909198;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: 'EB Garamond', serif;
+        }
+      }
+    }
+
+    .right_card {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1300px) {
+        width: 100%;
+      }
+
+      .card_title {
+        font-family: "EB Garamond", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        padding: 45px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-family: "EB Garamond", serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+        }
+      }
+
+      .card_content {
+        width: 100%;
+        height: 792px;
+        background: #ffffff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+        align-items: center;
+        position: relative;
+
+        @media (max-width: 1640px) {
+          height: 692px;
+        }
+
+        .echarts-for-react {
+          width: 100%;
+          height: 650px !important;
+
+          @media (max-width: 1640px) {
+            height: 500px !important;
+          }
+        }
+
+        .test_sec {
+          position: absolute;
+          bottom: 25px;
+          left: 50px;
+          font-size: 20px;
+          font-weight: 700;
+          color: #909198;
+          font-family: 'EB Garamond', serif;
+        }
+
+      }
+    }
+  }
+
+  .main_percentCard {
+    display: grid;
+    gap: 62px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 990px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .num_card {
+      width: 100%;
+      height: 175px;
+      background: #ffffff;
+      border-radius: 5px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .bold_title {
+        font-family: "EB Garamond", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 90px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+
+        @media (max-width: 1300px) {
+          font-size: 40px;
+        }
+      }
+
+      .subHead {
+        font-family: "EB Garamond", serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #012939;
+      }
+    }
+  }
+
+  .main_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 78px;
+
+    .table_content {
+      width: 100%;
+      overflow: hidden;
+
+      .table_title {
+        font-family: "EB Garamond", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 28px;
+        padding-top: 72px;
+      }
+
+      .table-striped {
+        @media (max-width: 990px) {
+          max-width: 800px;
+          overflow: scroll;
+        }
+
+        thead {
+          tr {
+
+            // border-radius: 5px 5px 0px 0px;
+            th {
+              background-color: #012939;
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 30px;
+              color: #ffffff;
+              text-align: center;
+
+              @media (max-width: 990px) {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            th {
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 18px;
+              line-height: 27px;
+              color: #000000;
+              text-align: center;
+
+              @media (max-width: 990px) {
+                font-size: 15px;
+              }
+            }
+
+            td {
+              font-family: "EB Garamond", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 27px;
+              color: #000000;
+              text-align: center;
+
+              @media (max-width: 990px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom_home {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right_card {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1300px) {
+        width: 100%;
+      }
+
+      .card_title {
+        font-family: "EB Garamond", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        padding: 0px 0px 42px 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card_content {
+        width: 100%;
+        padding: 30px;
+        height: 792px;
+        background: #ffffff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @media (max-width: 1640px) {
+          height: 692px;
+        }
+
+        .echarts-for-react {
+          width: 100%;
+          height: 650px !important;
+
+          @media (max-width: 1640px) {
+            height: 500px !important;
+          }
+        }
+
+        .test_sec {
+          position: absolute;
+          bottom: 25px;
+          left: 50px;
+          font-size: 20px;
+          color: #909198;
+          font-weight: 700;
+          font-family: 'EB Garamond', serif;
+        }
+
+      }
+    }
+  }
+}

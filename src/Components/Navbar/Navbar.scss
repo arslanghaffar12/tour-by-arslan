@@ -1,0 +1,211 @@
+.main_nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #012939;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 16px 0px 16px 0px;
+
+  .logo {
+    padding-left: 102px;
+
+    @media(max-width:1100px) {
+      padding-left: 50px;
+    }
+    @media(max-width:950px) {
+    padding-left: 30px;
+      }
+
+    img {
+      width: 376px;
+      height: 49px;
+      object-fit: contain;
+      @media(max-width:950px) {
+       width: 300px;
+       height: 35px;
+       object-fit: contain;
+          }
+    }
+  }
+
+  .nav_menu {
+    padding-right: 95px;
+    display: flex;
+    gap: 18px;
+
+    @media(max-width:1100px) {
+      padding-right: 30px;
+      gap: 9px;
+    }
+
+    @media(max-width:950px) {
+    display: none;
+    }
+
+    .active {
+      background: #99A9AF;
+      border: 1px solid #D6DDDF;
+      font-family: 'EB Garamond', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+      border-radius: 30px;
+    }
+
+    .menu {
+   font-family: 'EB Garamond', serif;
+      cursor: pointer;
+      padding: 5px 10px 5px 10px;
+      display: flex;
+      transition: .3s ease-in-out;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      gap: 10px;
+      position: relative;
+      transition: 0.3s ease-in-out;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #F8FAFC;
+    }
+
+
+
+
+
+
+    .log_btn {
+   font-family: 'EB Garamond', serif;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 5px 10px 5px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      color: white;
+      border-radius: 30px;
+      gap: 10px;
+      transition: 0.3s ease-in-out;
+      width: 130px;
+      height: 35px;
+    }
+  }
+
+  .close {
+    display: none;
+    padding-right: 30px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    @media(max-width:950px) {
+      display: flex;
+      }
+  }
+
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+.ant-drawer-right {
+
+  .ant-drawer-wrapper-body {
+    background-color: #012939;
+
+  }
+
+  .ant-drawer-close {
+    color: white;
+  }
+
+  .ant-drawer-header {
+    border-bottom: unset !important;
+  }
+
+  .ant-drawer-close:hover {
+    color: white !important;
+  }
+
+  .ham_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+
+    .active {
+      background: #99A9AF;
+      border: 1px solid #D6DDDF;
+      font-family: 'EB Garamond', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+
+      border-radius: 30px;
+    }
+
+    .menu {
+   font-family: 'EB Garamond', serif;
+      cursor: pointer;
+      display: flex;
+      transition: .3s ease-in-out;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      gap: 10px;
+      position: relative;
+      transition: 0.3s ease-in-out;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #F8FAFC;
+    }
+
+
+
+
+
+
+    .log_btn {
+   font-family: 'EB Garamond', serif;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 5px 10px 5px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      color: white;
+      border-radius: 30px;
+      gap: 10px;
+      transition: 0.3s ease-in-out;
+      width: 130px;
+      height: 35px;
+    }
+  }
+
+}
