@@ -1,0 +1,176 @@
+.main_login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  flex-direction: column;
+
+  .login_bg {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100px;
+  }
+
+  .login_card {
+    background-color: #012939;
+    width: 410px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .loging_logo {
+      width: 155px;
+      height: 72px;
+      object-fit: contain;
+    }
+
+    .input_group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+
+      .eye_icon {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        cursor: pointer;
+        color: #012939;
+      }
+
+      label {
+          font-family: 'EB Garamond', serif;
+        padding-bottom: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+      }
+
+      input {
+        background: #ffffff;
+        border: 1px solid #d5d9e0;
+        border-radius: 30px;
+        width: 100%;
+        height: 50px;
+        font-family: 'EB Garamond', serif;
+        font-weight: 700;
+        font-size: 18px;
+        padding-left: 34px;
+        outline: none;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+      }
+
+      .checkBox_content {
+        display: flex;
+        position: relative;
+        top: 32px;
+        right: 20px;
+        cursor: pointer;
+
+        .main_chk {
+          $transitionSpeed: 200ms;
+          cursor: pointer;
+
+          input[type="checkbox"] + label {
+            cursor: pointer;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border: 1px solid white;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            transition: all ease-out $transitionSpeed;
+            text-indent: 90px;
+            font: normal normal 30px/60px "Helvetica";
+            white-space: nowrap;
+            color: white;
+            user-select: none;
+
+            &:after {
+              content: "";
+              position: absolute;
+              width: 0px;
+              height: 6px;
+              border-bottom: 2px solid white;
+              border-left: 2px solid white;
+              top: 0;
+              left: 55%;
+              transform-origin: bottom left;
+              transform: rotate(-45deg);
+              opacity: 0;
+              transition: all ease-out $transitionSpeed;
+            }
+          }
+
+          input[type="checkbox"]:checked + label {
+            border: 3px solid white;
+
+            &:after {
+              opacity: 1;
+              width: 18px;
+            }
+          }
+
+          #chk {
+            display: none;
+          }
+        }
+      }
+
+      .rem {
+        padding-left: 60px;
+          font-family: 'EB Garamond', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      background: #99a9af;
+      border-radius: 33px;
+      outline: none;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+        font-family: 'EB Garamond', serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      border: none;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: #99c9af;
+      }
+    }
+  }
+}
